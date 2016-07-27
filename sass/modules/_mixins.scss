@@ -1,0 +1,97 @@
+@import "allmq";
+@mixin iconSize {
+    height: 181px;
+    width: 165px;
+}
+
+@mixin purpleButton {
+    color: white;
+    background: $mainPurple;
+    transition: background 0.5s ease;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 5px 5px $darkenPurple;
+}
+
+@mixin purpleButtonHover {
+    color: $darkenPurple;
+    background: white;
+    border: 1px solid $darkenPurple;
+    box-shadow: 0 -5px 5px $darkenPurple;
+}
+
+@mixin sliderImage {
+    height: 252px;
+    width: 252px;
+    margin: 0 65px;
+    border-radius: 50%;
+}
+
+@mixin borderCorner {
+    position: relative;
+    text-align: center;
+    padding: 35px;
+    font-size: 48px;
+    color: #676767;
+}
+
+@mixin borderCornerAfter {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid $mainPurple;
+    border-width: 0 0 1px 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin borderCornerBefore {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid $mainPurple;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin facebookIcon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url('../images/icon-fb.png') no-repeat;
+}
+
+@mixin googleIcon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url('../images/icon-g.png') no-repeat;
+}
+
+@mixin twitterIcon {
+    width: 50px;
+    height: 51px;
+    display: inline-block;
+    background: url('../images/icon-twitter2.png') no-repeat;
+}
+
+@mixin purpleSectionFlex {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0;
+    align-items: center;
+}
+
+@mixin purpleSectionHeader {
+    color: white;
+    width: 100%;
+    text-align: center;
+}

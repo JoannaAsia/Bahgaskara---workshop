@@ -1,0 +1,161 @@
+$h2-fontsize: 24px;
+$grey-font: #676767;
+$mainPurple: #9f449b;
+$darkenPurple: darken($mainPurple, 15%);
+$margin7: 7% 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //--------------------------------------------------------------------
+// // Variables components
+// // 
+// //# 1. Colors
+// //# 2. Typography
+// //# 3. Icons / Sprite
+// //# 4. Responsive
+// //# 5. Z-index
+// //# 6. Animation
+
+// //======================================================================
+// //# 1. Colors
+// //======================================================================
+// $c-black:        #090a0e !default;
+// $c-header-bg:    #222222 !default;
+// $c-main-bg:      #bdbdbd !default;
+// $c-footer-bg:    #7d7d7d !default;
+ 
+
+// // ==============
+// // Colors -- messages 
+
+// // Error
+// $c-bg-error :  red;
+// $c-txt-error : darken(red,30%);
+// $c-border-error: rgba(216, 80, 48, 0.3);
+
+// // Success
+// $c-bg-success : green;
+// $c-txt-success : darken(green,30%);
+// $c-border-success: rgba(48, 216, 111, 0.3);
+
+
+
+// //======================================================================
+// //# 2. Typography
+// //======================================================================
+
+
+// $web-fonts: 			  "../fonts";
+// // Fonts-family
+// $font-base:         "Open Sans", Helvetica Neue,Helvetica, Arial, sans-serif !default;
+// $font-header:         "Lora", serif !default;
+// $font-key: 				  Georgia, "Times New Roman" sserif;
+// $font-icon: 			  "ico";
+
+
+
+// //----------------------------------
+// // Fonts-size
+// // $base-font-size: 		16px;
+// // $base-line-height:		20px;
+// // $rythm-unit:			"rem";
+// // $round-to-nearest-half-line: true;
+
+// $em-base: 				      16px;
+// $em-sm:                 14px;
+// $font-size-xxl:        	rem(48) !default;
+// $font-size-xl:         	rem(42) !default;
+// $font-size-normal:      rem(16) !default;
+// $font-size-base:        rem(14) !default;
+// $font-size-small:       rem(13) !default;
+
+// $font-size-h1:          rem(36) !default;
+// $font-size-h2:          rem(80) !default;
+// $font-size-h3:          rem(28) !default;
+// $font-size-h4:          rem(25) !default;
+// $font-size-h5:          rem(24) !default;
+// $font-size-h6:       	  rem(22) !default;
+
+
+// //======================================================================
+// //# 3. Icons / Sprite
+// //======================================================================
+
+// // Used in project
+
+// // Images
+// $imgdir: "/images/";
+
+// //Public path
+// $public_path: "/";
+
+// //======================================================================
+// //# 4. Responsive
+// //======================================================================
+
+// $gutter: 20px;
+
+// $row-max-width: 		      1220px !default;  
+// $min-device-width: 		   	320px; 						// iPhone Portrait
+// $tablet-device-width: 	 	768px;					// iPad Portrait
+// $before-ipad-max: 767px;  
+// $document-width: 		      $row-max-width;				// Default Document
+// $max-device-width: 		   	2880px;						// Max Document Size
+
+// // Pure css grid
+// $b-sm: 					35.5em;  	//568px		.pure-u-sm-*
+// $b-md:					60em;   	//960px		.pure-u-md-*
+// $b-lg:					80em;   	//1280px	.pure-u-lg-*
+// $b-xl:					87.5em;   //1400px	.pure-u-lg-*
+// $b-xl-large:    100.000em; // 1600px 
+// $b-xxl:					120em;   	//1920px	.pure-u-lg-*
+
+// // Pure css grid max 
+// $b-xs-max: 				($b-sm - em(1)) !default;
+// $b-sm-max: 				($b-md - em(1)) !default;
+// $b-md-max: 				($b-lg - em(1)) !default;
+// $b-lg-max: 				($b-xl - em(1)) !default;
+// $b-xl-max: 				($b-xxl - em(1)) !default;
+
+
+// //Custom breakpoint
+// $b-md-plus:       64.000em - em(1);
+
+// //======================================================================
+// //# 5. Z-INDEX
+// //======================================================================
+
+// // ---------------------------
+// // Z-INDEX 
+// //
+// $z-layers: (
+//   	"default":          1,
+// );
+
+// @function map-fetch($map, $keys) {
+//   @each $key in $keys {
+//     $map: map-get($map, $key);
+//   }
+//   @return $map;
+// }
+
+// // # How to use
+// // 
+// // z-index: map-fetch($z-layers, default); === z-index:1
+
+
+// //======================================================================
+// //# 6. TRANSITION TIME
+// //======================================================================
+
+// $transition:		.12s;

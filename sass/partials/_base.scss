@@ -1,0 +1,598 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+        ::-webkit-input-placeholder {
+            color: black;
+        }
+    }
+    
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+    
+    header {
+        .header-background {
+            background-image: url('../images/header-background.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .header-align {
+            text-align: center;
+            padding: 5% 0;
+        }
+        .header-h1 {
+            color: white;
+            margin: 1rem;
+            font-size: 48px;
+            font-weight: normal;
+        }
+        .header-h2 {
+            color: white;
+            margin-bottom: 5rem;
+            font-size: $h2-fontsize;
+            font-weight: normal;
+        }
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 181px;
+            padding-left: 0;
+            margin: 1rem 0;
+            li {
+                height: 181px;
+                width: 165px;
+                list-style: none;
+                background-image: url('../images/shape.png');
+                background-repeat: no-repeat;
+            }
+            .up-li {
+                margin-top: -181px;
+            }
+            li:hover {
+                background-image: url('../images/shape-purple.png');
+            }
+            img {
+                padding-top: 40px;
+            }
+            a {
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                padding-top: 30px;
+            }
+        }
+        .scroll-container {
+            display: flex;
+            justify-content: center;
+        }
+        .scroll-down {
+            background-image: url('../images/arrow.png');
+            background-repeat: no-repeat;
+            height: 92px;
+            width: 89px;
+            a.scroll-to {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .scroll-down:hover {
+            background-image: url('../images/purple-arrow.png');
+            background-repeat: no-repeat;
+        }
+        .simple-menu {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-flex {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin: 20px;
+                list-style: none;
+                text-transform: uppercase;
+            }
+            a {
+                color: $grey-font;
+                text-decoration: none;
+                font-weight: 900;
+            }
+            a:hover {
+                color: #9f449b;
+            }
+        }
+    }
+    
+    #section-1 {
+        background: #eeeeee;
+        padding: 5%;
+        .section-flex {
+            display: flex;
+            //flex-wrap: wrap;
+        }
+        .description {
+            text-align: center;
+            padding: 0 10px;
+            font-size: 16px;
+            color: $grey-font;
+        }
+        .headings {
+            text-align: center;
+            padding-top: 181px;
+            font-size: $h2-fontsize;
+            color: $grey-font;
+        }
+        .icon-heart {
+            background: url('../images/greyicon-heart.png') no-repeat top;
+            margin: $margin7;
+        }
+        .icon-heart:hover {
+            background: url('../images/purpleicon-heart.png') no-repeat top;
+        }
+        .icon-diamond {
+            background: url('../images/greyicon-diamond.png') no-repeat top;
+            margin: $margin7;
+        }
+        .icon-diamond:hover {
+            background: url('../images/purpleicon-diamond.png') no-repeat top;
+        }
+        .icon-cup {
+            background: url('../images/greyicon-cup.png') no-repeat top;
+            margin: $margin7;
+        }
+        .icon-cup:hover {
+            background: url('../images/purpleicon-cup.png') no-repeat top;
+        }
+        .icon-phone {
+            background: url('../images/greyicon-phone.png') no-repeat top;
+            margin: $margin7;
+        }
+        .icon-phone:hover {
+            background: url('../images/purpleicon-phone.png') no-repeat top;
+        }
+    }
+    
+    #section-2 {
+        margin: $margin7;
+        h1 {
+            margin: $margin7;
+            text-align: center;
+        }
+        .purple {
+            color: $mainPurple;
+        }
+        span.border-corner {
+            @include borderCorner;
+        }
+        span.border-corner::after {
+            @include borderCornerAfter;
+        }
+        span.border-corner::before {
+            @include borderCornerBefore;
+        }
+        .flexbox {
+            margin: 10% 0;
+            display: flex;
+        }
+        #img-devices {
+            height: 22rem;
+            width: 55%;
+        }
+        .text-devices {
+            width: 45%;
+            margin: 0 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 2;
+            p {
+                margin: 0;
+            }
+            a.purple-btn {
+                @include purpleButton;
+                width: 35%;
+            }
+            a:hover {
+                @include purpleButtonHover;
+            }
+        }
+    }
+    
+    #section-3 {
+        background: url('../images/section-background.png') no-repeat center;
+        .h1-flexbox {
+            @include purpleSectionFlex;
+            div {
+                background: url('../images/whiteicon-hat.png') no-repeat;
+                @include iconSize;
+            }
+            h1 {
+                @include purpleSectionHeader;
+            }
+        }
+    }
+    
+    #section-4 {
+        text-align: center;
+        margin: $margin7;
+        span.border-corner {
+            @include borderCorner;
+        }
+        span.border-corner::after {
+            @include borderCornerAfter;
+        }
+        span.border-corner::before {
+            @include borderCornerBefore;
+        }
+        span.purple {
+            color: $mainPurple;
+        }
+        .buttons-flexbox {
+            margin: 10% 0 6% 0;
+            display: flex;
+            justify-content: center;
+            .prev-button {
+                background: url('../images/prev.png') no-repeat;
+                height: 70px;
+                width: 64px;
+                margin-right: 1%;
+            }
+            .next-button {
+                background: url('../images/next.png') no-repeat;
+                height: 70px;
+                width: 64px;
+            }
+        }
+        .slider-flexbox {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 10%;
+            > div {
+                position: relative;
+                left: 0;
+            }
+            .slider-img1 {
+                @include sliderImage;
+                background: url('../images/dog1.jpg') no-repeat center;
+            }
+            .slider-img2 {
+                @include sliderImage;
+                background: url('../images/dog2.jpg') no-repeat center;
+            }
+            .slider-img3 {
+                @include sliderImage;
+                background: url('../images/dog3.jpg') no-repeat center;
+            }
+            .slider-img4 {
+                @include sliderImage;
+                background: url('../images/dog4.jpg') no-repeat center;
+            }
+            .slider-img5 {
+                @include sliderImage;
+                background: url('../images/dog5.jpg') no-repeat center;
+            }
+            .slider-img6 {
+                @include sliderImage;
+                background: url('../images/dog6.jpg') no-repeat center;
+            }
+
+            h2 {
+                text-transform: uppercase;
+            }
+            .fb-icon {
+                @include facebookIcon;
+            }
+            a {
+                height: 100%;
+                width: 100%;
+            }
+            .google-icon {
+                @include googleIcon;
+            }
+        }
+        #services-scroll {
+            margin: $margin7;
+        }
+        .bars-flexbox {
+            margin-top: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .bars {
+            text-align: initial;
+            width: 418px;
+            h2 {
+                width: 90%;
+                font-weight: 900;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+            p {
+                width: 10px;
+                text-align: right;
+                display: inline-block;
+            }
+            .bar-webdesign {
+                padding: 10px 0;
+                width: 100%;
+                background: url('../images/bar-webdesign.png');
+            }
+            .bar-htmlcss {
+                padding: 10px 0;
+                width: 100%;
+                background: url('../images/bar-htmlcss.png');
+            }
+            .bar-graphicdesign {
+                padding: 10px 0;
+                width: 100%;
+                background: url('../images/bar-gdesign.png');
+            }
+            .bar-uiux {
+                padding: 10px 0;
+                width: 100%;
+                background: url('../images/bar-uiux.png');
+            }
+        }
+    }
+    
+    #section-5 {
+        background: url('../images/section-background.png') no-repeat center;
+        .h1-flexbox {
+            @include purpleSectionFlex;
+            div {
+                background: url('../images/services-lg.png') no-repeat;
+                @include iconSize;
+            }
+            h1 {
+                @include purpleSectionHeader;
+            }
+        }
+    }
+    
+    #section-6 {
+        background: #eeeeee;
+        padding: 5%;
+        .info {
+            margin-bottom: 64px;
+        }
+        .info-flexbox {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .large-font {
+            font-size: 64px;
+            margin-bottom: 0;
+        }
+        .slick-dots {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            li {
+                height: 15px;
+                width: 15px;
+                border: 1px solid #777777;
+                border-radius: 50%;
+                margin: 1rem 0.25rem 2rem 0;
+                &.slick-active {
+                    background-color: #777777;
+                }
+                &:hover {
+                    background: #777777;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+        ul.slider2 {
+            text-align: center;
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            li {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .slider2-img {
+            height: 252px;
+            width: 252px;
+            margin: auto;
+            background: url('../images/dog7.jpg') no-repeat center;
+            border-radius: 50%;
+        }
+        h2 {
+            text-align: center;
+            color: #4b4b4b;
+            margin: 3% 10%;
+            font-size: 33px;
+        }
+        h3 {
+            text-align: center;
+            color: #777777;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 3%;
+        }
+        // .circle-btn-flex {
+        //     display: flex;
+        //     justify-content: center;
+        //     margin: $margin7;
+        //     padding-bottom: 10%;
+        //     .circle-btn {
+        //         width: 10px;
+        //         height: 10px;
+        //         border: 1px solid #777777;
+        //         border-radius: 50%;
+        //         margin-left: 5px;
+        //     }
+        //     .circle-btn:hover {
+        //         background: #777777;
+        //     }
+        // }
+    }
+    
+    #section-7 {
+        text-align: center;
+        margin: $margin7;
+        span.border-corner {
+            @include borderCorner;
+        }
+        span.border-corner::after {
+            @include borderCornerAfter;
+        }
+        span.border-corner::before {
+            @include borderCornerBefore;
+        }
+        span.purple {
+            color: $mainPurple;
+        }
+        .filter-btn {
+            width: 83px;
+            height: 38px;
+            margin: $margin7;
+            line-height: 38px;
+            text-transform: uppercase;
+            border: 1px solid black;
+            border-radius: 3px;
+            display: inline-block;
+            transition: background 0.5s ease;
+        }
+        .filter-btn:hover {
+            color: white;
+            border: 0;
+            background: $mainPurple;
+        }
+        .filter-img {
+            display: inline-block;
+            width: 31%;
+            margin: 1%;
+            h3 {
+                font-size: 22px;
+                font-weight: bolder;
+                margin-bottom: 0;
+            }
+            p {
+                margin: 1rem 0 2rem 0;
+            }
+        }
+        p.btn-container {
+            display: flex;
+            justify-content: center;
+            a.purple-btn {
+                @include purpleButton;
+                width: 20%;
+                margin: 3% 0 7% 0;
+            }
+            a:hover {
+                @include purpleButtonHover;
+            }
+        }
+    }
+    
+    footer {
+        margin: $margin7;
+        h1 {
+            text-align: center;
+            margin-bottom: 7%;
+        }
+        .purple {
+            color: $mainPurple;
+        }
+        span.border-corner {
+            @include borderCorner;
+        }
+        span.border-corner::after {
+            @include borderCornerAfter;
+        }
+        span.border-corner::before {
+            @include borderCornerBefore;
+        }
+        .footer-flex {
+            display: flex;
+            justify-content: center;
+            .form-flex {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+            input {
+                color: black;
+                padding: 3%;
+                margin: 2%;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                border: 1px solid #808080;
+            }
+            textarea {
+                color: black;
+                margin: 2%;
+                padding: 3%;
+                min-height: 200px;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                border: 1px solid #808080;
+            }
+            .purple-btn {
+                @include purpleButton;
+                margin: 2%;
+                width: 30%;
+                &:hover {
+                    @include purpleButtonHover;
+                }
+            }
+            .contact-flex {
+                width: 50%;
+                margin-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.5rem;
+            }
+            #adress {
+                margin: 2rem 0;
+            }
+            h4 {
+                margin: 0;
+            }
+            .social-icons {
+                max-height: 100px;
+                margin: 5% 0;
+            }
+            span {
+                display: inline-block;
+            }
+            .fb-icon {
+                @include facebookIcon;
+            }
+            .google-icon {
+                @include googleIcon;
+            }
+            .t-icon {
+                @include twitterIcon;
+            }
+        }
+        .logo {
+            margin: 7% auto;
+            display: block;
+        }
+    }
+    
+    //position: relative dla poszczególnych divów z image'ami
+    //transition do slidera dla efektu ślizgu

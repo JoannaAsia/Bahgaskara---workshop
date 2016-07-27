@@ -1,0 +1,34 @@
+// // Helpers
+
+// .hidden {
+// 	display:none;
+// 	visibility: hidden;
+// }
+// .hidden-vs {
+// 	visibility:hidden;
+// 	opacity:0;
+// }
+
+// .clearfix, .clr {
+	
+//     &:before {
+//         content: "";
+//         display: table;
+//     }
+
+//     &:after {
+//         content: "";
+//         clear: both;
+//         display: table;
+//     }
+// }
+
+// // wcag hidden
+// .wcag_hide {
+//     clip: rect(1px,1px,1px,1px);
+//     display: block;
+//     position: absolute;
+//     opacity: 0;
+//     font: 0/0 a;
+//     color: transparent;
+// }
