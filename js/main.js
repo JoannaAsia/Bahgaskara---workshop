@@ -63,12 +63,11 @@ $(document).ready(function() {
             var tags = galleryImg[i].dataset.tag;
             console.log(tags);
             if (tags.indexOf(filterName) < 0) {
-                console.log('if');
-                galleryImg[i].classList.add('invisible');
+                console.log(galleryImg[i].parentElement);
+                galleryImg[i].parentElement.classList.add('invisible');
             } else {
-                galleryImg[i].classList.remove('invisible');
+                galleryImg[i].parentElement.classList.remove('invisible');
             }
-
         }
 
     });

@@ -452,9 +452,6 @@
     #section-7 {
         text-align: center;
         margin: $margin7;
-        .invisible {
-            display: none;
-        }
         span.border-corner {
             @include borderCorner;
         }
@@ -507,6 +504,9 @@
             a:hover {
                 @include purpleButtonHover;
             }
+        }
+        .invisible {
+            display: none;
         }
     }
     
