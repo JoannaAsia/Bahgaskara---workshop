@@ -285,7 +285,6 @@
                 @include sliderImage;
                 background: url('../images/dog6.jpg') no-repeat center;
             }
-
             h2 {
                 text-transform: uppercase;
             }
@@ -484,6 +483,12 @@
             display: inline-block;
             width: 31%;
             margin: 1%;
+            img {
+                transition: all 0.2s ease;
+            }
+            img:hover {
+                transform: scale(1.05);
+            }
             h3 {
                 font-size: 22px;
                 font-weight: bolder;

@@ -477,6 +477,10 @@ header .menu-flex {
     display: inline-block;
     width: 31%;
     margin: 1%; }
+    #section-7 .filter-img img {
+      transition: all 0.2s ease; }
+    #section-7 .filter-img img:hover {
+      transform: scale(1.05); }
     #section-7 .filter-img h3 {
       font-size: 22px;
       font-weight: bolder;
