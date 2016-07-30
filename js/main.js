@@ -16,9 +16,15 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
+
+    //next btn
+    $('.next-button').on('click', function() {
+
+    });
+
 
     //slider 2
     $('.your-class').slick({
@@ -45,6 +51,28 @@ $(document).ready(function() {
         }
 
     });
+
+    //galeria z filtrem
+    var allFilterBtn = $('.filter-btn');
+    var galleryImg = $('.filter-img').find('img');
+    
+    allFilterBtn.on('click', function(){
+        var filterName = $(this).html();
+        console.log(filterName);
+        for(var i = 0; i < galleryImg.length; i++) {
+            var tags = galleryImg[i].dataset.tag;
+            console.log(tags);
+            if (tags.indexOf(filterName) < 0) {
+                console.log('if');
+                galleryImg[i].classList.add('invisible');
+            } else {
+                galleryImg[i].classList.remove('invisible');
+            }
+
+        }
+
+    });
+
 
     //walidacja formularza 
     var form = $('.form-flex');

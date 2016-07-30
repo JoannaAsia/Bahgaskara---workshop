@@ -431,6 +431,8 @@ header .menu-flex {
 #section-7 {
   text-align: center;
   margin: 7% 0; }
+  #section-7 .invisible {
+    display: none; }
   #section-7 span.border-corner {
     position: relative;
     text-align: center;
