@@ -1,33 +1,9 @@
- // CONFIG
-//-----------------------------------------------
-@import "modules/vars";
-@import "modules/mixins";
-
-
-// VENDORS
-//-----------------------------------------------
-// @import "vendors/framework.scss";
-@import "vendors/animation";
-
-// Helpers
-//-----------------------------------------------
-@import "modules/helpers";
-
-
 // GLOBAL
 //-----------------------------------------------
-@import "partials/normalize";
+//@import "modules/allmq";
+@import "modules/vars";
+@import "modules/mixins";
 @import "partials/base";
 @import "partials/container";
-
-// PARTIALS
-//-----------------------------------------------
-@import "partials/header";
-@import "partials/footer";
-@import "partials/typography";
-@import "partials/buttons";
 @import "partials/stickymenu";
 
-// PAGES
-//-----------------------------------------------
-@import "pages/home"; 

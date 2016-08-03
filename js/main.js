@@ -7,7 +7,6 @@ $(document).ready(function() {
         return false;
     });
 
-
     //slider 1
     $('.autoplay').slick({
         prevArrow: $('.prev-button'),
@@ -18,12 +17,6 @@ $(document).ready(function() {
         autoplaySpeed: 3000,
     });
 
-    //next btn
-    $('.next-button').on('click', function() {
-
-    });
-
-
     //slider 2
     $('.your-class').slick({
         arrows: false,
@@ -31,7 +24,6 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000
     });
-
 
     //sticky menu
     var menu = $('.simple-menu');
@@ -67,9 +59,7 @@ $(document).ready(function() {
                 galleryImg[i].parentElement.classList.remove('invisible');
             }
         }
-
     });
-
 
     //walidacja formularza 
     var form = $('.form-flex');
