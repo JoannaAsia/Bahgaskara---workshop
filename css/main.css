@@ -185,6 +185,7 @@ header .menu-flex {
       background: #9f449b;
       transition: background 0.5s ease;
       padding: 20px;
+      border-color: #9f449b;
       border-radius: 5px;
       display: block;
       text-decoration: none;
@@ -495,6 +496,7 @@ header .menu-flex {
       background: #9f449b;
       transition: background 0.5s ease;
       padding: 20px;
+      border-color: #9f449b;
       border-radius: 5px;
       display: block;
       text-decoration: none;
@@ -570,6 +572,7 @@ footer {
       background: #9f449b;
       transition: background 0.5s ease;
       padding: 20px;
+      border-color: #9f449b;
       border-radius: 5px;
       display: block;
       text-decoration: none;
